@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AOS Example</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <h1>Hello, World!</h1>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          once: false,
+          mirror: true,
+          duration: 1000,
+          easing: "ease-in-out",
+        });
+
+        // Paksa AOS untuk memeriksa elemen yang sudah ada di viewport
+        AOS.refresh();
+      });
+    </script>
+  </body>
+</html>
