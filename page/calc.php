@@ -69,7 +69,7 @@ $db = new SQLite3('../db/ukm.db');
                         <li>
                             <a href="../page/kegiatan.php" class="flex items-center p-2 hover:bg-slate-600 rounded">
                                 <i class="fa-solid fa-clipboard-list mr-2"></i>
-                                Daftar Kegiatan
+                                Daftar Kegiatan 
                             </a>
                         </li>
                         <li>
